@@ -1,0 +1,95 @@
+body{
+    background-color: beige;
+    margin: 0%;
+}
+header{
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+nav{
+    background-color: darkslateblue;
+}
+nav ul li{
+    color: white;
+    cursor: pointer;
+}
+nav ul li : :hover {
+    background-color : purple;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+nav ul li{
+    position: relative;
+    padding: 15px 20px;
+
+}
+nav ul li ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    background-color: darkslateblue;
+    min-width: 150px;
+    padding: 0;
+}
+nav ul li:hover >ul{
+    display: block;
+}
+nav ul li ul li {
+    display: block;
+    padding: 10px 15px;
+}
+
+/* Main content styling */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
+
+/* Heading styling */
+h2 {
+    color: darkslateblue;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Page font */
+body {
+    font-family: Arial, sans-serif;
+}
+@media (max-width: 600px) {
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        padding: 10px;
+    }
+
+    nav ul li ul {
+        min-width: 130px;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+}
